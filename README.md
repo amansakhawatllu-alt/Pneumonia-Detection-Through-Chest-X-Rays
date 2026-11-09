@@ -1,4 +1,5 @@
 Pneumonia Detection Through Chest X-rays
+
 An academic AI and computer-vision project that explores the analysis of chest X-ray images using a trained Ultralytics YOLO model. The Flask web application lets users upload an X-ray and view the model output with highlighted detection regions.
 ⚠️ Important medical disclaimer: This is an educational research prototype, not a clinically validated medical device. Its output is not a diagnosis and must not be used to make medical decisions. Chest X-rays should be interpreted by qualified healthcare professionals.
 
@@ -67,11 +68,10 @@ Previously recorded OBB training configuration:
 - Best weights output: best.pt
 These are project-history details, not a claim that the model is clinically validated. Confirm the exact run and metrics from your own training results before using them in a formal report.
 
-📚 Dataset Citation
-Add the exact dataset name, creator/organization, source URL, version, access date, and license here. Follow the dataset provider's terms. Do not upload private, identifiable, or restricted medical images to this public repository.
 
 
 ⚙️ Setup and Installation
+
 1️⃣ Clone the Repository
 git clone https:
 cd pneumonia-detection-ai
@@ -83,7 +83,7 @@ macOS / Linux:
 python3 -m venv venv
 source venv/bin/activate
 
-3️⃣ Install Dependencies
+3️⃣ Install Dependencies:
 pip install --upgrade pip
 pip install -r requirements.txt
 
