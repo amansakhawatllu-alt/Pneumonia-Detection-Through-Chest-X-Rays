@@ -5,6 +5,7 @@ An academic AI and computer-vision project that explores the analysis of chest X
 
 
 📌 Project Overview
+
 Pneumonia is a lung infection that can appear in chest X-ray images. This project applies computer vision to identify image regions that the trained model has learned to associate with pneumonia.
 
 The project workflow includes:
@@ -88,6 +89,7 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 4️⃣ Add the Trained Model
+
 Copy your trained best.pt file into the repository's root directory, at the same level as app.py.
 The model file is intentionally excluded from Git because model weights can be large. If you want to distribute it, use a suitable model-hosting service or Git LFS, and check the dataset/model license before sharing.
 
@@ -98,6 +100,7 @@ http://127.0.0.1:5000/
 Upload a supported chest X-ray image (.jpg, .jpeg, .png, .bmp, or .webp) and select Analyze Image.
 
 🔄 How the Application Works
+
 1. Flask receives the uploaded image.
 2. The filename is sanitized and a unique filename is generated.
 3. The image is saved in static/uploads/.
@@ -107,6 +110,7 @@ Upload a supported chest X-ray image (.jpg, .jpeg, .png, .bmp, or .webp) and sel
 7. The webpage displays the original image, annotated output, detection count, and confidence when available.
    
 📊 Model Evaluation
+
 Use the metrics produced by the actual training/evaluation run. Common object-detection metrics include:
 - Precision: proportion of predicted detections that are correct.
 - Recall: proportion of relevant objects that the model detects.
@@ -116,6 +120,7 @@ Use the metrics produced by the actual training/evaluation run. Common object-de
 Insert your verified plots, confusion matrix, and test-set metrics in the project report. Do not estimate or invent scores.
 
 ⚠️ Limitations
+
 - Performance depends on the quality, diversity, labeling, and representativeness of the training dataset.
 - Results may not generalize to images from different hospitals, devices, populations, or acquisition settings.
 - A detection result is not equivalent to a confirmed clinical diagnosis.
@@ -123,6 +128,7 @@ Insert your verified plots, confusion matrix, and test-set metrics in the projec
 - The displayed confidence is a model score, not the probability that a patient has pneumonia.
   
 🚀 Future Improvements
+
 - Evaluate on a larger, independent, appropriately licensed test dataset.
 - Improve data quality and assess class imbalance and possible dataset bias.
 - Add model versioning and reproducible experiment tracking.
@@ -131,11 +137,15 @@ Insert your verified plots, confusion matrix, and test-set metrics in the projec
 - Conduct validation with qualified medical and research professionals before considering any clinical use.
 
 🔐 Responsible Use and Privacy
+
 Only use images you are authorized to process. Avoid uploading identifiable patient information. Do not publish patient data, private medical images, or credentials in this repository. This project is intended for learning and research demonstration only.
 
 👩‍💻 Author
+
 Aman Sakhawat
+
 Zainab Ilyas
+
 Software Engineering Project
 
 📄 License
